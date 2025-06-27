@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(22,25,29);
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.white_mode{
+    background-color: rgb(235, 225, 198);
+    color: black !important;
+}
+
+#cambiar_tema{
+    cursor: pointer;
+}
+
+/*Seccion de las tecnologias*/
+#tab {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #ddd;
+}
+  
+#tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: background-color 0.3s;
+    flex: 1;
+    font-size: 16px;
+}
+  
+#tab button:hover {
+    color: rgb(16, 185, 129);
+}
+  
+#tab button.active {
+    border-bottom: 2px solid rgb(16, 185, 129);
+    color: rgb(16, 185, 129);
+}
+  
+.tabcontent {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: none;
+    padding: 20px;
+    border-top: none;
+    font-size:x-large;
+}
+
+ /* Tema claro */
+ .modal-content.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Tema oscuro */
+.modal-content.dark-theme {
+    background-color: rgb(22,25,29);
+    color: #fff;
+}
+
+/* Botón cerrar en tema oscuro */
+.modal-content.dark-theme .btn-close {
+    filter: invert(1);
+}
+
+.modal-content{
+    padding: 2%;
+}
+
+#ver_detalles{
+    margin-top: 2%;
+    outline: 1.5px solid rgb(221, 233, 111);
+    outline-offset: 0.2rem;
+    padding: 1%;
+}
+
+#btn_close{
+    outline: 1.5px solid rgb(221, 233, 111);
+    outline-offset: 0.2rem;
+    background-color: rgb(221, 233, 111);
+    color: #000;
+    padding: 1%;
+}
+
+footer{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#parrafo_copy{
+    padding: 1%;
+}

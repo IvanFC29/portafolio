@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Ivan</title>
+    <!-- Importar Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Importar Tailswind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Importar Devicons -->    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Importar Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Importar CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Aquí irá tu contenido -->
+    <header class="p-4">
+        <div class="flex flex-row">
+            <div id="divLogo"><h1 class="text-3xl">Hola👋, Soy Ivan</h1></div>
+            <!-- <div id="divBoton">
+                <button id="cambiar_tema" class="py-2 px-2">
+                    <i id="themeIcon" class="fas fa-sun"></i>
+                </button>
+            </div> -->
+        </div>
+        <hr>
+        <nav>
+            <ul class="p-2 flex space-x-4">
+                <li><a href="#about" class="hover:underline">Sobre mí</a></li>
+                <li><a href="#tecnologias" class="hover:underline">Habilidades</a></li>
+                <li><a href="#projects" class="hover:underline">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="p-8">
+        <h2 class="text-2xl font-bold">Sobre mí</h2>
+        <p class="mt-4">Soy un estudiante de la carrera de Ingeniería en Sistemas de la Universidad Mayor de San Simón, apasionado por la programación. Me gusta aprender de forma autodidacta y crear cosas nuevas.</p>
+    </section>
+
+    <section id="tecnologias" class="p-8">
+        <h2 class="text-2xl font-bold">Habilidades Técnicas</h2>
+        <div id="tab" class="flex flex-wrap border-b mb-4 p-4">
+            <button class="tablinks" onclick="openTab(event, 'tab1')">Lenguajes de Programación</button>
+            <button class="tablinks" onclick="openTab(event, 'tab2')">Frameworks Backend</button>
+            <button class="tablinks" onclick="openTab(event, 'tab3')">Tecnologías Frontend</button>
+            <button class="tablinks" onclick="openTab(event, 'tab4')">Base de Datos</button>
+            <button class="tablinks" onclick="openTab(event, 'tab5')">Linux</button>
+        </div>
+        <div id="tab1" class="tabcontent">
+            <p class="space-x-4">
+                <i class="devicon-java-plain colored"></i> Java 
+                <i class="devicon-python-plain colored"></i> Python
+                <i class="devicon-php-plain colored"></i> PHP
+                <i class="devicon-javascript-plain colored"></i> JavaScript
+            </p>
+        </div>
+        <div id="tab2" class="tabcontent">
+            <p class="space-x-4">
+                <i class="devicon-laravel-plain colored"></i> Laravel
+                <i class="devicon-django-plain colored"></i> Django
+                <i class="devicon-spring-plain colored"></i> Spring Boot
+            </p>
+        </div>
+        <div id="tab3" class="tabcontent">
+            <p class="space-x-4">
+                <i class="devicon-html5-plain colored"></i> HTML
+               <i class="devicon-css3-plain colored"></i> CSS
+               <i class="devicon-react-original colored"></i> React
+               <i class="devicon-bootstrap-plain colored"></i> Bootstrap     
+               <i class="devicon-tailwindcss-original colored"></i> Tailwind
+            </p>
+        </div>
+        <div id="tab4" class="tabcontent">
+            <p class="space-x-4">
+                <i class="devicon-mysql-plain colored"></i> MySQL
+               <i class="devicon-postgresql-plain colored"></i> PostgreSQL
+            </p>
+        </div>
+        <div id="tab5" class="tabcontent">
+            <p class="space-x-4">
+                <i class="devicon-bash-plain colored"></i> Bash 
+                <i class="devicon-linux-plain colored"></i> Linux
+            </p>
+        </div>
+        <hr>
+        <div id="hard_skillis" class="p-2">
+            <h2 class="text-2xl font-bold">Habilidades Blandas</h2>
+            <br>
+            <li>Trabajo en equipo</li>
+            <li>Adaptabilidad</li>
+            <li>Pensamiento sistémico</li>
+            <li>Metodologías Agiles</li>
+        </div>
+    </section>
+
+    <section id="projects" class="p-8">
+        <h2 class="text-2xl font-bold">Proyectos</h2>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 border-green-500 border-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold">'Basic Board'</h3>
+                <p class="mt-2">Pizarra virtual con funciones basicas .</p>
+                <button id="ver_detalles" class="bg-yellow-200 text-black p-1 hover:bg-yellow-300" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="open_modal(1)">Detalles</button>
+            </div>
+            <div class="p-4 border-green-500 border-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold">'Long Old Live +'</h3>
+                <p class="mt-2">Página web para la salud de los adultos mayores</p>
+                <button id="ver_detalles" class="bg-yellow-200 text-black p-1 hover:bg-yellow-300" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="open_modal(2)">Detalles</button>
+            </div>
+            <div class="p-4 border-green-500 border-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold">Programa de Mensajería</h3>
+                <p class="mt-2">Aplicación para enviar correos con el protoclo smtp.</p>
+                <button id="ver_detalles" class="bg-yellow-200 text-black p-1 hover:bg-yellow-300" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="open_modal(3)">Detalles</button>
+            </div>
+            <div class="p-4 border-green-500 border-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold">Gestión de eventos UMSS</h3>
+                <p class="mt-2">Página web que permite gestionar eventos académicos.</p>
+                <button id="ver_detalles" class="bg-yellow-200 text-black p-1 hover:bg-yellow-300" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="open_modal(4)">Detalles</button>
+            </div>
+            <div class="p-4 border-green-500 border-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold">Simulación del proceso de una fabrica de Galletas</h3>
+                <p class="mt-2">Aplicación que simula el proceso de producir galletas y calculando datos en base la simulación de sistemas.</p>
+                <button id="ver_detalles" class="bg-yellow-200 text-black p-1 hover:bg-yellow-300" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="open_modal(5)">Detalles</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content dark-theme" id="modalContent">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="imagen">
+                        
+                    </div>
+                    <div id="texto" class="modal-body">
+                        
+                    </div>
+                    <div id="repository">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btn_close"  data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p id="parrafo_copy">Ivan &copy 2025 - Bolivia</p> <hr>
+        <div class="contacto">
+            <a href="http://">
+                <i class="fab fa-facebook-f"></i> 
+            </a>
+            <a href="http://">
+                <i class="fab fa-twitter"></i> 
+            </a> 
+            <a href="https://github.com/IvanFC29">
+                <i class="fab fa-github"></i> 
+            </a>
+            <a href="mailto:ivanflorescalle128@gmail.com">
+                <i class="fas fa-envelope"></i> 
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assets/components.js" text="text/javascript"></script>
+</body>
+</html>
