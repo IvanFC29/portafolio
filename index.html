@@ -29,16 +29,22 @@
         <hr>
         <nav>
             <ul class="p-2 flex space-x-4">
-                <li><a href="#about" class="hover:underline">Sobre mí</a></li>
-                <li><a href="#tecnologias" class="hover:underline">Habilidades</a></li>
-                <li><a href="#projects" class="hover:underline">Proyectos</a></li>
+                <li><a href="#about" class="text-green-200 hover:underline">Sobre mí</a></li>
+                <li><a href="#tecnologias" class="text-green-200 hover:underline">Habilidades</a></li>
+                <li><a href="#projects" class="text-green-200 hover:underline">Proyectos</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="about" class="p-8">
         <h2 class="text-2xl font-bold">Sobre mí</h2>
-        <p class="mt-4">Soy un estudiante de la carrera de Ingeniería en Sistemas de la Universidad Mayor de San Simón, apasionado por la programación. Me gusta aprender de forma autodidacta y crear cosas nuevas.</p>
+        <div class="relative grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+            <p class="m-2">Soy un estudiante de la carrera de Ingeniería en Sistemas de la Universidad Mayor de San Simón, apasionado por la programación. Me gusta aprender de forma autodidacta y crear cosas nuevas. Actualmente estoy mejorando mis habilidades en desarrollo web tanto en frontend como en backend.</p>
+            <img 
+                src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" 
+                alt="GIF de saludo"
+                class="w-48 h-48 rounded-full object-cover shadow-md float-right ml-4 mb-2" />    
+        </div>
     </section>
 
     <section id="tecnologias" class="p-8">
